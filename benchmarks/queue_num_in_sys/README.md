@@ -21,6 +21,24 @@ QUEUE_NUM_IN_SYS_DIR=benchmarks/queue_num_in_sys/processed_variants/homogeneous 
 MODEL=cast ABLATION=full torchrun --standalone --nproc_per_node=1 dist.py
 ```
 
+## Review Artifact
+
+For anonymous review-time reproduction, download the packaged queue artifact:
+
+```bash
+python scripts/download_queue_review_artifact.py --extract
+```
+
+The script downloads:
+
+```text
+https://drive.google.com/file/d/1-4cahBtZOigTvfEWYfCuYD51NDDSEHzG/view?usp=sharing
+```
+
+It verifies the archive SHA256 checksum and creates
+`benchmarks/queue_num_in_sys/processed_variants` as a symlink to the extracted
+artifact contents.
+
 ## Split Policy
 
 Splits are by whole queue system, not overlapping windows, to avoid leakage

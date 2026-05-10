@@ -50,3 +50,30 @@ described in the paper. Exact paper reproduction uses:
 Each queue slice should include `train_sequences.csv`, `val_sequences.csv`,
 `test_sequences.csv`, `metadata.json`, `vocab.csv`, `npy/*.npy`, and
 `times/*.npy`, plus a checksum manifest.
+
+For anonymous review-time reproduction, the packaged queue artifact is hosted at:
+
+```text
+https://drive.google.com/file/d/1-4cahBtZOigTvfEWYfCuYD51NDDSEHzG/view?usp=sharing
+```
+
+Archive:
+
+```text
+queue_benchmark_review_artifact_2026-05-09.tar.zst
+```
+
+SHA256:
+
+```text
+ea171e6ed6ca6829cc481e20b496d3459f05b47501826e0ac3e51fa25749ab2f
+```
+
+Recommended command:
+
+```bash
+python scripts/download_queue_review_artifact.py --extract
+```
+
+After extraction, the script links the packaged `queue_processed_variants/`
+directory to `benchmarks/queue_num_in_sys/processed_variants/`.

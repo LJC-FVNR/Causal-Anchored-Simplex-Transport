@@ -18,6 +18,12 @@ For `DATASET=tensor_dir`, set `DATASET_DIR` to a directory containing
 Set `QUEUE_NUM_IN_SYS_DIR` to one processed queue slice. Exact paper slices are
 `homogeneous`, `nonhomogeneous`, and `combined`.
 
+For review-time reproduction, run:
+
+```bash
+python scripts/download_queue_review_artifact.py --extract
+```
+
 ## NYC TLC Preparation Fails
 
 Install `pyarrow`; the TLC pipeline reads parquet files.

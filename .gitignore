@@ -8,6 +8,9 @@ outputs/
 runs/
 *.pt
 *.pth
+*.tar
+*.tar.gz
+*.tar.zst
 !tests/fixtures/**/*.pt
 
 benchmarks/*/raw/
@@ -15,6 +18,7 @@ benchmarks/*/processed/
 benchmarks/queue_num_in_sys/processed_variants/
 benchmarks/queue_num_in_sys/processed_variants_baseline/
 benchmarks/queue_num_in_sys/processed_variants_large/
+benchmarks/queue_num_in_sys/queue_benchmark_review_artifact_*/
 
 *.log
 *.out

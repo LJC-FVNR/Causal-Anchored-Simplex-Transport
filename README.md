@@ -96,6 +96,14 @@ benchmarks/queue_num_in_sys/processed_variants/nonhomogeneous
 benchmarks/queue_num_in_sys/processed_variants/combined
 ```
 
+For review-time reproduction, the queue artifact is available through the
+anonymous Google Drive link documented in `docs/data_manifest.md`. Download,
+verify, and unpack it with:
+
+```bash
+python scripts/download_queue_review_artifact.py --extract
+```
+
 ## Train CAST
 
 Tiny CPU example:

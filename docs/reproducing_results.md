@@ -27,6 +27,12 @@ DATASET=owid_dietary torchrun --standalone --nproc_per_node=1 dist.py
 
 ## Paper-Style Queue Run
 
+First download and unpack the review-time queue artifact:
+
+```bash
+python scripts/download_queue_review_artifact.py --extract
+```
+
 ```bash
 set -a
 source configs/paper_queue.env

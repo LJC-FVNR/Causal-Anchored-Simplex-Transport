@@ -17,3 +17,16 @@ def test_benchmark_scripts_show_help():
             text=True,
         )
         assert result.returncode == 0, f"{script} --help failed: {result.stderr}"
+
+
+def test_queue_review_artifact_downloader_shows_help():
+    root = Path(__file__).resolve().parents[1]
+    script = root / "scripts" / "download_queue_review_artifact.py"
+    result = subprocess.run(
+        [sys.executable, str(script), "--help"],
+        cwd=root,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+    )
+    assert result.returncode == 0, result.stderr
