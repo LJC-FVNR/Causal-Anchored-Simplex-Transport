@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Dataset-level comparison: CAST vs.\ strongest non-CAST baseline on each metric (lower is better; bold = winner). CAST is top-1 on 8/11 sections for both metrics and top-2 on all 11 sections for offline KL.}
+\label{tab:main-dataset-summary}
+\scriptsize
+\setlength{\tabcolsep}{2.4pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}l rl rl@{}}
+\toprule
+& \multicolumn{2}{c}{Offline KL $\downarrow$} & \multicolumn{2}{c}{Rollout JSD $\downarrow$} \\
+\cmidrule(lr){2-3}\cmidrule(l){4-5}
+Dataset & CAST vs.\ strongest non-CAST & Winner & CAST vs.\ strongest non-CAST & Winner \\
+\midrule
+BioTIME              & \textbf{0.1313} \,/\, 0.1844 N-HiTS        & \textbf{CAST}  & 0.03232 \,/\, \textbf{0.02206} Comp.\ ETS   & Comp.\ ETS \\
+Ember Monthly        & \textbf{0.04342} \,/\, 0.05583 Persist.    & \textbf{CAST}  & \textbf{0.007129} \,/\, 0.01146 ilr-VAR     & \textbf{CAST} \\
+OWID Dietary         & \textbf{0.009096} \,/\, 0.009747 Comp.\ ETS & \textbf{CAST}  & 0.005478 \,/\, \textbf{0.005441} Persist.    & Persist.\ \\
+CDC Weekly Deaths    & \textbf{0.01079} \,/\, 0.01423 N-HiTS      & \textbf{CAST}  & 0.01743 \,/\, \textbf{0.003676} Persist.    & Persist.\ \\
+BLS QCEW             & \textbf{0.0008773} \,/\, 0.001242 Persist. & \textbf{CAST}  & \textbf{0.0002459} \,/\, 0.0002461 Persist. & \textbf{CAST} \\
+EPA AirData AQI      & 0.1184 \,/\, \textbf{0.09518} N-HiTS       & N-HiTS          & \textbf{0.03749} \,/\, 0.04465 Transf.\      & \textbf{CAST} \\
+NOAA Storm Events    & 1.004 \,/\, \textbf{0.805} N-HiTS          & N-HiTS          & \textbf{0.2042} \,/\, 0.2161 LSTM            & \textbf{CAST} \\
+NYC TLC Trip         & \textbf{0.02168} \,/\, 0.02742 N-HiTS       & \textbf{CAST}  & \textbf{0.009625} \,/\, 0.01169 Comp.\ ETS   & \textbf{CAST} \\
+Queue Homogeneous    & 0.01576 \,/\, \textbf{0.01466} ilr-VAR     & ilr-VAR         & \textbf{0.07323} \,/\, 0.0887 Persist.\      & \textbf{CAST} \\
+Queue Nonhomogeneous & \textbf{0.07101} \,/\, 0.07959 Persist.     & \textbf{CAST}  & \textbf{0.03857} \,/\, 0.05524 Persist.\     & \textbf{CAST} \\
+Queue Combined       & \textbf{0.007519} \,/\, 0.0103 Persist.     & \textbf{CAST}  & \textbf{0.081} \,/\, 0.08827 Comp.\ ETS      & \textbf{CAST} \\
+\midrule
+\textbf{CAST top-1} & \multicolumn{2}{c}{\textbf{8/11 sections}} & \multicolumn{2}{c}{\textbf{8/11 sections}} \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

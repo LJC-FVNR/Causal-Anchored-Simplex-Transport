@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Five-seed CAST robustness on the non-queue datasets. Values are mean $\pm$ sample standard deviation over five CAST runs, combining the benchmark run together with robustness seeds 42--45. Lower is better for all metrics. EPA and NOAA offline values use the same rolling-window offline evaluation protocol as the benchmark tables.}
+\label{tab:appendix-cast-seed-robustness}
+\scriptsize
+\setlength{\tabcolsep}{2.2pt}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & Offline KL & Offline JSD & Rollout KL & Rollout JSD \\
+\midrule
+BioTIME & $0.129846931 \pm 0.001307300$ & $0.028489747 \pm 0.000339945$ & $0.115820839 \pm 0.013476657$ & $0.029042774 \pm 0.003360500$ \\
+Ember Monthly & $0.040094380 \pm 0.006953061$ & $0.010433575 \pm 0.001772240$ & $0.028612465 \pm 0.007330173$ & $0.007923460 \pm 0.001567363$ \\
+OWID Dietary & $0.016360002 \pm 0.009978004$ & $0.003982110 \pm 0.002597886$ & $0.036616299 \pm 0.014838105$ & $0.008544794 \pm 0.003986897$ \\
+CDC Weekly Deaths & $0.009233608 \pm 0.000985212$ & $0.002518346 \pm 0.000282897$ & $0.062832310 \pm 0.009995790$ & $0.018819080 \pm 0.003049933$ \\
+BLS QCEW & $0.000838914 \pm 0.000029311$ & $0.000204769 \pm 0.000003499$ & $0.001010642 \pm 0.000000031$ & $0.000245855 \pm 0.000000003$ \\
+EPA AirData AQI & $0.112830553 \pm 0.005006539$ & $0.031074019 \pm 0.001461186$ & $0.134789750 \pm 0.007979795$ & $0.037963682 \pm 0.002572998$ \\
+NOAA Storm Events & $0.996603588 \pm 0.031013309$ & $0.237163796 \pm 0.006285711$ & $0.894662467 \pm 0.023715547$ & $0.208050197 \pm 0.004317885$ \\
+NYC TLC Trip & $0.021926485 \pm 0.000213208$ & $0.005383274 \pm 0.000042496$ & $0.039566407 \pm 0.000288092$ & $0.009684717 \pm 0.000076063$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

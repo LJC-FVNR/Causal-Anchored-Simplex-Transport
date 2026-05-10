@@ -1,0 +1,9 @@
+{
+  "name": "tiny_simplex",
+  "prob_dim": 3,
+  "splits": [
+    "train",
+    "val",
+    "test"
+  ]
+}

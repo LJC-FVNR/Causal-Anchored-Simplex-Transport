@@ -1,0 +1,94 @@
+% Requires booktabs and longtable.
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{longtable}{@{}llrrrr@{}}
+\caption{Full CAST component-study metrics by benchmark section. Deltas are variant/CAST$-1$ on the same section; negative values mean the variant has lower error than CAST.}\label{tab:appendix-ablation-full-metrics}\\
+\toprule
+Dataset & Variant & Offline KL & KL $\Delta$ & Rollout JSD & Rollout $\Delta$ \\
+\midrule
+\endfirsthead
+\caption[]{Full CAST component-study metrics by benchmark section (continued).}\\
+\toprule
+Dataset & Variant & Offline KL & KL $\Delta$ & Rollout JSD & Rollout $\Delta$ \\
+\midrule
+\endhead
+BioTIME & \textbf{CAST} & \textbf{0.131296} & -- & \textbf{0.0323185} & -- \\
+ & w/o structural reg. & 0.131296 & +0.0\% & 0.0323185 & +0.0\% \\
+ & anchor only & 0.131296 & +0.0\% & 0.0323185 & +0.0\% \\
+ & single-head retrieval & 0.140599 & +7.1\% & 0.0309276 & -4.3\% \\
+ & fixed local kernel & 0.131296 & +0.0\% & 0.0323185 & +0.0\% \\
+ & w/o persistence mix & 0.146632 & +11.7\% & 0.0280559 & -13.2\% \\
+\addlinespace
+Ember Monthly & \textbf{CAST} & \textbf{0.043419} & -- & \textbf{0.00712895} & -- \\
+ & w/o structural reg. & 0.043419 & +0.0\% & 0.00712895 & +0.0\% \\
+ & anchor only & 0.043419 & +0.0\% & 0.00712895 & +0.0\% \\
+ & single-head retrieval & 0.0300788 & -30.7\% & 0.00758012 & +6.3\% \\
+ & fixed local kernel & 0.043419 & +0.0\% & 0.00712895 & +0.0\% \\
+ & w/o persistence mix & 0.133281 & +207.0\% & 0.0138151 & +93.8\% \\
+\addlinespace
+OWID Dietary & \textbf{CAST} & \textbf{0.00909632} & -- & \textbf{0.00547772} & -- \\
+ & w/o structural reg. & 0.00909632 & +0.0\% & 0.00547772 & +0.0\% \\
+ & anchor only & 0.00909632 & +0.0\% & 0.00547772 & +0.0\% \\
+ & single-head retrieval & 0.0138495 & +52.3\% & 0.00686305 & +25.3\% \\
+ & fixed local kernel & 0.00909632 & +0.0\% & 0.00547772 & +0.0\% \\
+ & w/o persistence mix & 0.00868301 & -4.5\% & 0.00524196 & -4.3\% \\
+\addlinespace
+CDC Weekly Deaths & \textbf{CAST} & \textbf{0.0107881} & -- & \textbf{0.0174321} & -- \\
+ & w/o structural reg. & 0.0107881 & +0.0\% & 0.0174321 & +0.0\% \\
+ & anchor only & 0.0107881 & +0.0\% & 0.0174321 & +0.0\% \\
+ & single-head retrieval & 0.00898956 & -16.7\% & 0.0171674 & -1.5\% \\
+ & fixed local kernel & 0.0107881 & +0.0\% & 0.0174321 & +0.0\% \\
+ & w/o persistence mix & 0.00968232 & -10.2\% & 0.0181817 & +4.3\% \\
+\addlinespace
+BLS QCEW & \textbf{CAST} & \textbf{0.000877299} & -- & \textbf{0.000245855} & -- \\
+ & w/o structural reg. & 0.000877299 & +0.0\% & 0.000245855 & +0.0\% \\
+ & anchor only & 0.000877299 & +0.0\% & 0.000245855 & +0.0\% \\
+ & single-head retrieval & 0.000742832 & -15.3\% & 0.00024583 & +0.0\% \\
+ & fixed local kernel & 0.000877299 & +0.0\% & 0.000245855 & +0.0\% \\
+ & w/o persistence mix & 0.00100521 & +14.6\% & 0.000243454 & -1.0\% \\
+\addlinespace
+EPA AirData AQI & \textbf{CAST} & \textbf{0.118364} & -- & \textbf{0.0374855} & -- \\
+ & w/o structural reg. & 0.114322 & -3.4\% & 0.0370734 & -1.1\% \\
+ & anchor only & 0.111513 & -5.8\% & 0.0359284 & -4.2\% \\
+ & single-head retrieval & 0.11995 & +1.3\% & 0.0398978 & +6.4\% \\
+ & fixed local kernel & 0.114509 & -3.3\% & 0.0380775 & +1.6\% \\
+ & w/o persistence mix & 0.152539 & +28.9\% & 0.0377938 & +0.8\% \\
+\addlinespace
+NOAA Storm Events & \textbf{CAST} & \textbf{1.0042} & -- & \textbf{0.204162} & -- \\
+ & w/o structural reg. & 1.00412 & +0.0\% & 0.204198 & +0.0\% \\
+ & anchor only & 1.00412 & +0.0\% & 0.204198 & +0.0\% \\
+ & single-head retrieval & 1.00397 & +0.0\% & 0.208365 & +2.1\% \\
+ & fixed local kernel & 1.0042 & +0.0\% & 0.204162 & +0.0\% \\
+ & w/o persistence mix & 1.14998 & +14.5\% & 0.209803 & +2.8\% \\
+\addlinespace
+NYC TLC Trip & \textbf{CAST} & \textbf{0.0216781} & -- & \textbf{0.00962498} & -- \\
+ & w/o structural reg. & 0.0216781 & +0.0\% & 0.00962498 & +0.0\% \\
+ & anchor only & 0.0216781 & +0.0\% & 0.00962498 & +0.0\% \\
+ & single-head retrieval & 0.0217785 & +0.5\% & 0.00985627 & +2.4\% \\
+ & fixed local kernel & 0.0216781 & +0.0\% & 0.00962498 & +0.0\% \\
+ & w/o persistence mix & 0.0239812 & +10.6\% & 0.0096677 & +0.4\% \\
+\addlinespace
+Queue Homogeneous & \textbf{CAST} & \textbf{0.0157613} & -- & \textbf{0.0732326} & -- \\
+ & w/o structural reg. & 0.0158458 & +0.5\% & 0.0730351 & -0.3\% \\
+ & anchor only & 0.0185469 & +17.7\% & 0.0886507 & +21.1\% \\
+ & single-head retrieval & 0.01584 & +0.5\% & 0.0746717 & +2.0\% \\
+ & fixed local kernel & 0.0160649 & +1.9\% & 0.0712605 & -2.7\% \\
+ & w/o persistence mix & 0.0157966 & +0.2\% & 0.0703303 & -4.0\% \\
+\addlinespace
+Queue Nonhomogeneous & \textbf{CAST} & \textbf{0.0710114} & -- & \textbf{0.0385748} & -- \\
+ & w/o structural reg. & 0.0736161 & +3.7\% & 0.0554675 & +43.8\% \\
+ & anchor only & 0.0814837 & +14.7\% & 0.0474633 & +23.0\% \\
+ & single-head retrieval & 0.0694002 & -2.3\% & 0.0548115 & +42.1\% \\
+ & fixed local kernel & 0.0694392 & -2.2\% & 0.124439 & +222.6\% \\
+ & w/o persistence mix & 0.0865577 & +21.9\% & 0.0511655 & +32.6\% \\
+\addlinespace
+Queue Combined & \textbf{CAST} & \textbf{0.00751856} & -- & \textbf{0.0810041} & -- \\
+ & w/o structural reg. & 0.00903069 & +20.1\% & 0.109586 & +35.3\% \\
+ & anchor only & 0.010207 & +35.8\% & 0.0923865 & +14.1\% \\
+ & single-head retrieval & 0.00826227 & +9.9\% & 0.0899711 & +11.1\% \\
+ & fixed local kernel & 0.00837703 & +11.4\% & 0.109043 & +34.6\% \\
+ & w/o persistence mix & 0.133507 & +1675.7\% & 0.136629 & +68.7\% \\
+\bottomrule
+\end{longtable}
+\endgroup

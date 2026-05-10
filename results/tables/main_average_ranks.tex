@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Average ranks across the 11 benchmark sections (lower is better). All 16 methods are complete on all 11 sections; ranks are directly comparable. CAST is the only method with sub-2 average rank on either metric.}
+\label{tab:main-average-ranks}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}l rrrr@{\hspace{1.0em}}l rrrr@{}}
+\toprule
+Method & KL$_\text{avg}$ & RO$_\text{avg}$ & Mean & Best & Method & KL$_\text{avg}$ & RO$_\text{avg}$ & Mean & Best \\
+\midrule
+\textbf{CAST}       & \textbf{1.27} & \textbf{1.91} & \textbf{1.59} & 1 / 1 & iTransformer & 8.73  & 9.73  & 9.23  & 5 / 7 \\
+Comp.\ ETS          & 5.27          & 3.91          & 4.59          & 2 / 1 & TCN          & 8.64  & 11.27 & 9.95  & 3 / 7 \\
+Persistence         & 5.64          & 3.73          & 4.68          & 2 / 1 & TimeMixer    & 9.00  & 11.36 & 10.18 & 3 / 5 \\
+N-HiTS              & 5.27          & 5.55          & 5.41          & 1 / 3 & TiDE         & 10.82 & 10.18 & 10.50 & 8 / 7 \\
+Informer            & 6.45          & 7.18          & 6.82          & 4 / 3 & LSTM         & 12.27 & 9.45  & 10.86 & 7 / 2 \\
+Transformer         & 9.00          & 6.64          & 7.82          & 3 / 2 & Analog succ.\ & 12.00 & 11.18 & 11.59 & 5 / 4 \\
+ilr-VAR             & 7.45          & 8.64          & 8.05          & 1 / 2 & Autoformer   & 12.55 & 13.64 & 13.09 & 6 / 6 \\
+GRU                 & 8.55          & 8.27          & 8.41          & 3 / 3 & DLinear      & 13.09 & 13.36 & 13.23 & 6 / 11 \\
+\bottomrule
+\end{tabular}
+\end{table}

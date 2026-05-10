@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Synthetic aliasing experiment ($K=2$ equal-probability regimes, identical $p^\star$, opposite radius-1 local transports). Fixed-summary forecasters must collapse to the JS-average; phase-aware anchor-only cannot leave the no-transport hull; CAST closes the gap.}
+\label{tab:synthetic-aliasing-experiment}
+\small
+\setlength{\tabcolsep}{3.2pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Method & KL $\downarrow$ & JSD $\downarrow$ & $L^1$ $\downarrow$ \\
+\midrule
+Fixed-summary optimum (Bayes mixture average) & 0.044893 & 0.011562 & 0.238730 \\
+Trained current-only neural forecaster & $0.044899\pm 3.3\mathrm{e}{-6}$ & $0.011564\pm 3.2\mathrm{e}{-6}$ & $0.238774\pm 2.9\mathrm{e}{-5}$ \\
+Phase-aware anchor only (no transport) & 0.047840 & 0.011722 & 0.246619 \\
+CAST oracle local transport & \textbf{0} & \textbf{0} & \textbf{0} \\
+Trained CAST local-transport head & $\mathbf{1.7\mathrm{e}{-8}\pm 5.0\mathrm{e}{-8}}$ & $\mathbf{0\pm 6.1\mathrm{e}{-8}}$ & $\mathbf{2.3\mathrm{e}{-4}\pm 1.7\mathrm{e}{-5}}$ \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

@@ -1,0 +1,16 @@
+name: cast
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch>=2.1
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+  - pillow
+  - pyarrow
+  - pytest
+  - pip

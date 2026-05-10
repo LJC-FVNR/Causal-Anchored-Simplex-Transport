@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Benchmark suite summary. Ordered = the support has a natural order relevant to local transport ($\rho_t\not\equiv 0$). Queue sections follow the G/G/1 and $G_t/G/1$ generation protocol of \citet{di2025transformerqueue}.}
+\label{tab:main-dataset-summary-short}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}lllrrrc@{}}
+\toprule
+Section & Type & Sequence unit & \#Seq. & $D$ & Length (min / med / max) & Ordered \\
+\midrule
+BioTIME & ecological composition & study-site annual & 646 & 128 & 15 / 25 / 57 & no \\
+Ember Monthly & energy generation share & country monthly & 87 & 9 & 40 / 109 / 327 & no \\
+OWID Dietary & diet composition & country annual & 135 & 25 & 63 / 63 / 63 & no \\
+CDC Weekly Deaths & mortality cause share & state weekly & 50 & 6 & 190 / 190 / 190 & no \\
+BLS QCEW & industry employment share & state annual & 53 & 13 & 15 / 15 / 15 & no \\
+EPA AirData AQI & AQI category share & county monthly & 800 & 6 & 60 / 191 / 300 & \textbf{yes} \\
+NOAA Storm Events & event-type share & state monthly & 49 & 32 & 61 / 244 / 300 & no \\
+NYC TLC Trip & pickup-zone share & pickup-hour weekly & 24 & 266 & 52 / 53 / 53 & no \\
+Queue Homogeneous & G/G/1 occupancy & queue trajectory & 10{,}000 & 596 & 101 / 549 / 16621 & \textbf{yes} \\
+Queue Nonhomogeneous & $G_t/G/1$ occupancy & queue trajectory & 9{,}900 & 562 & 27 / 547 / 1758 & \textbf{yes} \\
+Queue Combined & pooled G/G/1 $\cup$ $G_t/G/1$ & queue trajectory & 19{,}900 & 596 & 27 / 548 / 16621 & \textbf{yes} \\
+\bottomrule
+\end{tabular}
+\end{table}

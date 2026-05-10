@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Component and capacity-control summary. Win counts are each CAST variant vs.\ the strongest non-CAST baseline per section (so 8/11 matches full CAST). Median $\Delta$ is variant/CAST$-1$; positive means higher error.}
+\label{tab:ablation-summary}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Variant & Study & KL wins & RO wins & Med.\ KL $\Delta$ & Med.\ RO $\Delta$ & KL$<$CAST & RO$<$CAST \\
+\midrule
+\textbf{CAST} & Full model & \textbf{8/11} & \textbf{8/11} & -- & -- & -- & -- \\
+w/o structural reg. & Strict ablation & 8/11 & 6/11 & +0.0\% & +0.0\% & 2/11 & 2/11 \\
+anchor only & Strict ablation & 7/11 & 7/11 & +0.0\% & +0.0\% & 2/11 & 1/11 \\
+single-head retrieval & Capacity control & 7/11 & 7/11 & +0.5\% & +2.4\% & 5/11 & 3/11 \\
+fixed local kernel & Strict ablation & 8/11 & 6/11 & +0.0\% & +0.0\% & 2/11 & 1/11 \\
+w/o persistence mix & Strict ablation & 5/11 & 7/11 & +14.5\% & +0.8\% & 2/11 & 4/11 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering
+\caption{Dataset-level best component-control comparison against CAST. The selected component variant is the lowest-error non-CAST CAST control for that metric; negative deltas mean the component control is lower than CAST.}
+\label{tab:appendix-ablation-best-variant-deltas}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}lrrrlrrr@{}}
+\toprule
+Dataset & CAST KL & Best variant KL & KL $\Delta$ & KL variant & CAST RO & Best variant RO & RO $\Delta$ \\
+\midrule
+BioTIME & 0.131296 & 0.131296 & +0.0\% & w/o structural reg. & 0.0323185 & 0.0280559 & -13.2\% \\
+Ember Monthly & 0.043419 & 0.0300788 & -30.7\% & single-head retrieval & 0.00712896 & 0.00712896 & +0.0\% \\
+OWID Dietary & 0.00909632 & 0.00868301 & -4.5\% & w/o persistence mix & 0.00547772 & 0.00524196 & -4.3\% \\
+CDC Weekly Deaths & 0.0107881 & 0.00898956 & -16.7\% & single-head retrieval & 0.0174321 & 0.0171674 & -1.5\% \\
+BLS QCEW & 0.000877299 & 0.000742832 & -15.3\% & single-head retrieval & 0.000245855 & 0.000243454 & -1.0\% \\
+EPA AirData AQI & 0.118364 & 0.111513 & -5.8\% & anchor only & 0.0374855 & 0.0359284 & -4.2\% \\
+NOAA Storm Events & 1.0042 & 1.00397 & +0.0\% & single-head retrieval & 0.204162 & 0.204162 & +0.0\% \\
+NYC TLC Trip & 0.0216781 & 0.0216781 & +0.0\% & w/o structural reg. & 0.00962498 & 0.00962498 & +0.0\% \\
+Queue Homogeneous & 0.0157613 & 0.0157966 & +0.2\% & w/o persistence mix & 0.0732326 & 0.0703303 & -4.0\% \\
+Queue Nonhomogeneous & 0.0710114 & 0.0694002 & -2.3\% & single-head retrieval & 0.0385748 & 0.0474633 & +23.0\% \\
+Queue Combined & 0.00751856 & 0.00826227 & +9.9\% & single-head retrieval & 0.0810041 & 0.0899711 & +11.1\% \\
+\bottomrule
+\end{tabular}
+\end{table*}
